@@ -7,10 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Kelola Data</title>
     <style>
       .sidebar {
@@ -50,7 +47,7 @@
 
       <a
         data-bs-toggle="collapse"
-        href="#menuGuru"
+        data-bs-target="#menuGuru"
         role="button"
         aria-expanded="false"
         aria-controls="menuGuru"
@@ -58,14 +55,14 @@
         Guru
       </a>
 
-      <!-- <div class="collapse submenu" id="menuGuru"> -->
+      <div class="collapse submenu ms-4" id="menuGuru">
         <a href="konten/Guru/DataGuru/" target="kontenFrame">
           <i class="bi bi-person-badge"></i> Data Guru
         </a>
         <a href="konten/Guru/InputDataGuru/" target="kontenFrame">
           <i class="bi bi-person-plus"></i> Input Data Guru
         </a>
-      <!-- </div> -->
+      </div>
 
       <a href="konten/Siswa/DataSiswa/" target="kontenFrame">
         <i class="bi bi-people"></i> Data Siswa
@@ -92,6 +89,6 @@
         frameborder="0"
       ></iframe>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
