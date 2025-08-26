@@ -20,44 +20,44 @@
       <div class="col-sm-8">
         <div class="card shadow-sm">
           <div class="card-body">
-            <form>
+            <form action="../../../backend/Query/addGuru.php" method="POST">
               <div class="mb-3 row align-items-center">
                 <label for="namaGuru" class="col-sm-5 col-form-label">Nama Guru</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control" id="namaGuru" />
+                  <input type="text" class="form-control" id="namaGuru" name="namaGuru"/>
                 </div>
               </div>
               <div class="mb-3 row align-items-center">
                 <label for="ttl" class="col-sm-5 col-form-label">Tempat Tanggal Lahir</label>
                 <div class="col-sm-7">
-                  <input type="date" class="form-control" id="namaGuru" />
+                  <input type="date" class="form-control" id="ttl" name="ttl"/>
                 </div>
               </div>
               <div class="mb-3 row align-items-center">
-                <label for="ttl" class="col-sm-5 col-form-label">Jenis Kelamin</label>
+                <label for="jenis_kelamin" class="col-sm-5 col-form-label">Jenis Kelamin</label>
                 <div class="col-sm-7">
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select" aria-label="Default select example" name="jenis_kelamin">
                     <option selected>Pilih Jenis Kelamin</option>
                     <option value="lakilaki">Laki-laki</option>
                     <option value="perempuan">Perempuan</option>
                   </select>
                 </div>
               </div>
-               <div class="mb-3 row align-items-center">
+              <div class="mb-3 row align-items-center">
                 <label for="mapel" class="col-sm-5 col-form-label">Mata Pelajaran</label>
                 <div class="col-sm-7">
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select" aria-label="Default select example" name="mapel">
                     <option selected>Mata Pelajaran</option>
                     <option value="Pemrograman Web">Pemrograman Web</option>
                     <option value="perempuan">Pemrograman Perangkat Bergerak</option>
                   </select>
                 </div>
-               </div>
+              </div>
 
 
               <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary mt-3">
-                  Submit
+                <button type="submit" class="btn btn-primary mt-3" name="simpan">
+                  SIMPAN
                 </button>
               </div>
             </form>
