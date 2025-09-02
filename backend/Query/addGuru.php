@@ -12,7 +12,7 @@
         $hasilAddGuru = $conn->query($sqlAddGuru);
 
         if ($hasilAddGuru) {
-            echo 'data berhasil disimpan!';
+            header("Location: ../../konten/Guru/DataGuru/index.php");
         } else {
             echo 'data gagal disimpan!';
         }

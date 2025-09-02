@@ -27,6 +27,7 @@
             <th scope="col">Tanggal Lahir</th>
             <th scope="col">Jenis Kelamin</th>
             <th scope="col">Mapel</th>
+            <th scope="col">Aksi</th>
           </tr>
         </thead>
         <tbody>
@@ -41,6 +42,10 @@
               <td><?= $data['tanggal_lahir'] ?></td>
               <td><?= $data['jenis_kelamin'] ?></td>
               <td><?= $data['mapel'] ?></td>
+              <!-- edit -->
+              <td><a href="formEditDataGuru.php?id_guru=<?= $data['id_guru'] ?>"><i class="bi bi-pencil-square"></i></a></td> 
+              <!-- delete -->
+              <td><a href="../../../backend/Query/deleteGuru.php?id_guru=<?= $data['id_guru'] ?>"onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')"><i class="bi bi-trash text-danger"></i></a></td>
             </tr>
           <?php
           }
