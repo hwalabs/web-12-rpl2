@@ -15,22 +15,23 @@
 
 <body class="bg-light">
   <div class="container">
-    Form Data Guru
+
     <div class="row justify-content-center">
       <div class="col-sm-8">
         <div class="card shadow-sm">
+          <h3 class="card-title text-center"> Form Data Guru</h3>
           <div class="card-body">
             <form action="../../../backend/Query/addGuru.php" method="POST">
               <div class="mb-3 row align-items-center">
                 <label for="namaGuru" class="col-sm-5 col-form-label">Nama Guru</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control" id="namaGuru" name="namaGuru"/>
+                  <input type="text" class="form-control" id="namaGuru" name="namaGuru" />
                 </div>
               </div>
               <div class="mb-3 row align-items-center">
                 <label for="ttl" class="col-sm-5 col-form-label">Tempat Tanggal Lahir</label>
                 <div class="col-sm-7">
-                  <input type="date" class="form-control" id="ttl" name="ttl"/>
+                  <input type="date" class="form-control" id="ttl" name="ttl" />
                 </div>
               </div>
               <div class="mb-3 row align-items-center">

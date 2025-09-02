@@ -52,7 +52,7 @@
 <body class="bg-black">
   <div class="sidebar">
     <h4 class="text-center text-white">Admin</h4>
-    <a href="konten/Dashboard/" target="kontenFrame">
+    <a href="konten/Dashboard/index.php" target="kontenFrame">
       <i class="bi bi-house-heart"></i> Dashboard
     </a>
 
@@ -66,7 +66,7 @@
     </a>
 
     <div class="collapse submenu ms-4" id="menuGuru">
-      <a href="konten/Guru/DataGuru/" target="kontenFrame">
+      <a href="konten/Guru/DataGuru/index.php" target="kontenFrame">
         <i class="bi bi-person-badge"></i> Data Guru
       </a>
       <a href="konten/Guru/InputDataGuru/" target="kontenFrame">
@@ -94,7 +94,7 @@
       </div>
     </nav>
     <iframe
-      src="konten/Dashboard/"
+      src="konten/Dashboard/index.php"
       name="kontenFrame"
       frameborder="0"></iframe>
   </div>
