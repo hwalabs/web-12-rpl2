@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['id_pengguna'])) {
+  header("Location: index.php"); //halaman login
+  exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,6 +89,9 @@
     <a href="konten/Siswa/InputDataSiswa/" target="kontenFrame">
       <i class="bi bi-person-lines-fill"></i> Input Data Siswa
     </a>
+    <a href="backend/Query/prosesLogout.php">
+      <i class="bi bi-box-arrow-left"></i> Logout
+    </a>
   </div>
 
   <!-- <div class="content">
@@ -94,7 +105,7 @@
       </div>
     </nav>
     <iframe
-      src="konten/Dashboard/index.php"
+      src="konten/Dashboard/"
       name="kontenFrame"
       frameborder="0"></iframe>
   </div>
