@@ -18,7 +18,7 @@
 
         header("Location: ../../halamanUtama.php");
     } else {
-        echo "Email atau Password salah";
+        echo "<script>alert('email atau password salah');window.location.href='../../index.php';</script>";
     }
 
 ?>

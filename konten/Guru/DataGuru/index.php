@@ -17,6 +17,26 @@
   <?php
   include '../../../backend/Query/readGuru.php';
   ?>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Data Guru</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Search form di kanan -->
+        <form class="d-flex ms-auto" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
     <div class="row justify-content-center">
       <table class="table w-100">
@@ -43,9 +63,9 @@
               <td><?= $data['jenis_kelamin'] ?></td>
               <td><?= $data['mapel'] ?></td>
               <!-- edit -->
-              <td><a href="formEditDataGuru.php?id_guru=<?= $data['id_guru'] ?>"><i class="bi bi-pencil-square"></i></a></td> 
+              <td><a href="formEditDataGuru.php?id_guru=<?= $data['id_guru'] ?>"><i class="bi bi-pencil-square"></i></a></td>
               <!-- delete -->
-              <td><a href="../../../backend/Query/deleteGuru.php?id_guru=<?= $data['id_guru'] ?>"onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')"><i class="bi bi-trash text-danger"></i></a></td>
+              <td><a href="../../../backend/Query/deleteGuru.php?id_guru=<?= $data['id_guru'] ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')"><i class="bi bi-trash text-danger"></i></a></td>
             </tr>
           <?php
           }

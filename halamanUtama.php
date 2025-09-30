@@ -89,6 +89,9 @@ if (!isset($_SESSION['id_pengguna'])) {
     <a href="konten/Siswa/InputDataSiswa/" target="kontenFrame">
       <i class="bi bi-person-lines-fill"></i> Input Data Siswa
     </a>
+    <a href="konten/tambahPengguna.php" target="kontenFrame">
+      <i class="bi bi-person-lines-fill"></i> Tambah Pengguna
+    </a>
     <a href="backend/Query/prosesLogout.php">
       <i class="bi bi-box-arrow-left"></i> Logout
     </a>
