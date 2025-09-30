@@ -105,7 +105,7 @@ if (!isset($_SESSION['id_pengguna'])) {
       </div>
     </nav>
     <iframe
-      src="konten/Dashboard/"
+      src="konten/Dashboard/index.php"
       name="kontenFrame"
       frameborder="0"></iframe>
   </div>

@@ -1,10 +1,9 @@
 <?php
-    if (!isset($_SESSION['id_pengguna'])) {
-        header("Location: ../../index.php");
-        exit();
-    }
-
-
+session_start();
+if (!isset($_SESSION['id_pengguna'])) {
+    header("Location: index.php");
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +18,7 @@
 
 <body>
     <?php
-        include __DIR__ . '/../../backend/Query/readGuru.php';
+    include __DIR__ . '/../../backend/Query/readGuru.php';
     ?>
     <div class="container-fluid">
         <h3 class="p-3">Selamat Datang!</h3>
