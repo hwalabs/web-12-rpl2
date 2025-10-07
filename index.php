@@ -30,6 +30,7 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
+                <a href="daftar.php">daftar</a>
             </div>
 
         </div>
